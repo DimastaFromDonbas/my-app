@@ -65,12 +65,12 @@ function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
     }
 
     return (
-        <div>
-            <div>
+        <div className="flex">
+            <div className="flex-button">
             <button onClick = {handleRestart}>Restart game</button>
             </div>
-            <h2>Белые - {blackTime}</h2>
-            <h2>Черные - {whiteTime}</h2>
+            <h2 className="time-flex-wh">Белые - {blackTime}</h2>
+            <h2 className="time-flex-wh">Черные - {whiteTime}</h2>
         </div>
     )
 }

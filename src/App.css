@@ -127,6 +127,13 @@
   .flex {
     display: flex;
   }
+  .flex-button {
+    width: 100px;
+  }
+  .time-flex-wh {
+    font-size: 17px;
+    width: 120px;
+  }
 }
 
 
