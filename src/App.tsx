@@ -40,11 +40,9 @@ function App() {
        board = {board}
        setBoard = {setBoard}/>
       
-       <div>
+       <div className='flex'>
         <LostFigures title={"Белые фигуры"} figures={board.lostWhiteFigures} />
-       </div>
-
-       <div>
+       
         <LostFigures title={"Черные фигуры"} figures={board.lostBlackFigures} />
        </div>
     </div>

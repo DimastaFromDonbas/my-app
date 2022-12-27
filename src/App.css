@@ -52,6 +52,7 @@
 }
 
 .lost {
+  margin-top: 20px;
   height: calc(50vh - 60px);
   padding: 30px;
   margin-left: 50px;
@@ -76,23 +77,23 @@
   }
   
   .board {
-    width: calc(32px*8);
-    height: calc(32px*8);
+    width: calc(42px*8);
+    height: calc(42px*8);
     display: flex;
     flex-wrap: wrap;
   }
   
   .cell {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .cell img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     position: relative;
   }
   
@@ -116,10 +117,15 @@
   }
   
   .lost {
-    height: calc(25vh - 30px);
+    height: calc(25vh - 15px);
+    width: 100px;
     padding: 15px;
+    margin-top: 10px;
     margin-left: 15px;
     background-color: lightgrey;
+  }
+  .flex {
+    display: flex;
   }
 }
 
