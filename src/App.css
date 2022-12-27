@@ -26,16 +26,37 @@
   align-items: center;
 }
 
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
 .black {
-  background-color: rgb(34, 36, 45);
+  background-color: rgb(55, 58, 72);
 }
 
 .white {
   background-color: #989ca0e7;
 }
 
+.selected {
+  background-color: rgb(165, 132, 42);
+}
 
+.available {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: green;
+}
 
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgrey;
+}
 
 
 
