@@ -39,6 +39,7 @@ function App() {
        currentPlayer = {currentPlayer}
        board = {board}
        setBoard = {setBoard}/>
+      
        <div>
         <LostFigures title={"Белые фигуры"} figures={board.lostWhiteFigures} />
        </div>

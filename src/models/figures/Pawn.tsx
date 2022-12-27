@@ -18,6 +18,7 @@ export class Pawn extends Figure {
   canMove(target: Cell): boolean {
     if(!super.canMove(target))
       return false;
+      
     const direction = this.cell.figure?.color === Colors.BLACK ? -1  : 1 
     const firstStepDirection = this.cell.figure?.color === Colors.BLACK ? -2  : 2 
       // eslint-disable-next-line
@@ -33,7 +34,11 @@ export class Pawn extends Figure {
     && this.cell.isEnemy(target)) {
       return true;
     }
-
+    
+    if(this.isFirstStep && target.y === this.cell.y) {
+      return false;
+    }
+     
     return false;
   }
 

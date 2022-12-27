@@ -58,6 +58,71 @@
   background-color: lightgrey;
 }
 
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    padding-left: 100px;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .board {
+    width: calc(32px*8);
+    height: calc(32px*8);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cell {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  
+  .black {
+    background-color: rgb(55, 58, 72);
+  }
+  
+  .white {
+    background-color: #989ca0e7;
+  }
+  
+  .selected {
+    background-color: rgb(165, 132, 42);
+  }
+  
+  .available {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  
+  .lost {
+    height: calc(25vh - 30px);
+    padding: 15px;
+    margin-left: 15px;
+    background-color: lightgrey;
+  }
+}
+
 
 
 
