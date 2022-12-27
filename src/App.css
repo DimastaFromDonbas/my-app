@@ -134,6 +134,11 @@
     font-size: 17px;
     width: 120px;
   }
+  .flex-head {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 

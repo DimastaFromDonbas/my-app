@@ -65,7 +65,7 @@ function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
     }
 
     return (
-        <div className="flex">
+        <div className="flex-head">
             <div className="flex-button">
             <button onClick = {handleRestart}>Restart game</button>
             </div>
