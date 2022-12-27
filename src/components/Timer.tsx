@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import {  useEffect, useRef, useState } from "react";
 import { Colors } from "../models/Colors";
 import { Player } from "../models/Player";
 
@@ -15,8 +15,10 @@ function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
     const timer = useRef<null | ReturnType<typeof setInterval>>(null)
 
     useEffect(() => {
-        startTimer()
-    },[currentPlayer])
+        // eslint-disable-next-line
+        startTimer() // eslint-disable-next-line
+        // eslint-disable-next-line
+    },[currentPlayer]) // eslint-disable-next-line
 
     function startTimer(){
         if(timer.current) {
