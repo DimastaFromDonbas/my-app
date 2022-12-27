@@ -139,6 +139,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .flex-head-board {
+    display: flex;
+    margin-bottom: 10px;
+    color: blue;
+    justify-content: center;
+  }
 }
 
 

@@ -45,7 +45,7 @@ const BoardComponent: FC<BoardProps> =({board, setBoard , currentPlayer ,swapPla
     return (
             <div>
 
-                <h3>Текущий игрок {currentPlayer?.color}</h3>
+                <h3 className="flex-head-board">Текущий игрок {currentPlayer?.color}</h3>
 
                 <div className="board">
                 {board.cells.map( (row, index) =>
