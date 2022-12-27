@@ -10,8 +10,8 @@ interface TimerProps {
 
 function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
 
-    const [blackTime, setBlacktime] = useState(60)
-    const [whiteTime, setWhitetime] = useState(60)
+    const [blackTime, setBlacktime] = useState(120)
+    const [whiteTime, setWhitetime] = useState(120)
     const timer = useRef<null | ReturnType<typeof setInterval>>(null)
 
     useEffect(() => {
@@ -30,12 +30,12 @@ function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
 
     function restartDecrementTimerBlack(){
         decrimentWhiteTimer()
-        setBlacktime(60)
+        setBlacktime(120)
     }
 
     function restartDecrementTimerWhite(){
         decrimentBlackTimer()
-        setWhitetime(60)
+        setWhitetime(120)
     }
 
     function decrimentBlackTimer(){
@@ -59,8 +59,8 @@ function Timer({currentPlayer , restart, swapPlayer}:TimerProps)  {
     }
 
     const handleRestart = () => {
-        setBlacktime(60)
-        setWhitetime(60)
+        setBlacktime(120)
+        setWhitetime(120)
         restart()
     }
 
